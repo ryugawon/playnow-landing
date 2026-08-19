@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayNow | 첫 시청 유도 캠페인 기획안</title>
+    <style>
+        :root {
+            --bg-color: #0a0a0a;
+            --text-color: #ffffff;
+            --accent-color: #ff3b30; /* 트렌디한 레드 */
+            --card-bg: #161616;
+            --font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: var(--bg-color); color: var(--text-color); font-family: var(--font-family); line-height: 1.6; }
+
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        
+        /* 헤더 */
+        header { padding: 60px 0; text-align: center; }
+        h1 { font-size: 2.5rem; margin-bottom: 10px; line-height: 1.2; }
+        p.subtitle { color: #888; font-size: 1.1rem; }
+
+        /* 히어로 섹션 */
+        .hero { background: var(--card-bg); padding: 40px; border-radius: 20px; text-align: center; margin-bottom: 40px; border: 1px solid #333; }
+        .cta-btn { background: var(--accent-color); color: #fff; padding: 18px 40px; border: none; border-radius: 50px; font-size: 1.2rem; font-weight: bold; cursor: pointer; transition: transform 0.2s, background 0.3s; margin-top: 20px; display: inline-block; text-decoration: none; }
+        .cta-btn:hover { transform: scale(1.05); background: #ff5e55; }
+
+        /* 섹션 공통 */
+        section { margin-bottom: 60px; }
+        h2 { font-size: 1.8rem; margin-bottom: 20px; border-left: 4px solid var(--accent-color); padding-left: 15px; }
+
+        /* 그리드 */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+        .card { background: var(--card-bg); padding: 20px; border-radius: 12px; border: 1px solid #333; text-align: center; }
+        .card i { font-size: 2rem; display: block; margin-bottom: 10px; color: var(--accent-color); }
+
+        /* 메시지 시뮬레이터 */
+        .push-preview { background: #1c1c1e; padding: 20px; border-radius: 16px; width: 300px; margin: 0 auto; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        .push-msg { font-size: 0.9rem; margin-bottom: 15px; }
+
+        footer { text-align: center; padding: 40px; color: #555; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>PlayNow 첫 시청 유도<br>CRM 마케팅 기획안</h1>
+        <p class="subtitle">30년 베테랑의 데이터 기반 Activation 전략</p>
+    </header>
+
+    <section class="hero">
+        <h2>고민은 짧게, 몰입은 깊게.</h2>
+        <p>가입 후 아직 시청을 경험하지 못한 신규 유저에게<br>취향 저격 콘텐츠로 첫 재생을 선물합니다.</p>
+        <a href="#" class="cta-btn">지금 첫 작품 보기</a>
+    </section>
+
+    <section>
+        <h2>타깃 인사이트 (Data Points)</h2>
+        <div class="grid">
+            <div class="card">🔥 <span>가입 D+2</span></div>
+            <div class="card">📱 <span>앱 실행 2회</span></div>
+            <div class="card">💖 <span>장르 방문 2회</span></div>
+            <div class="card">🚫 <span>재생 0회</span></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>핵심 메시지 전략 (3단 구조)</h2>
+        <div class="push-preview">
+            <p><strong>[PlayNow]</strong></p>
+            <p class="push-msg">💗 가원님, 오늘 볼 로맨스 아직 고민 중이세요? 지금 인기 있는 작품만 골라봤어요.</p>
+            <button style="width:100%; padding:8px; border:none; border-radius:6px; background:#333; color:white;">앱에서 보기</button>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 PlayNow Marketing Strategy Team
+    </footer>
+</div>
+
+</body>
+</html>
